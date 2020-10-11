@@ -1,0 +1,17 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          sso:
+            client-id: 0oai8o4gsdkWfFIJ14x6
+            client-secret: f-PTy40SVIicxU2Nubgk_rXw2NZAGGWRbrNKm29v
+            client-name: sso
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8080/login/oauth2/code/sso
+            scope: openid,profile,email
+        provider:
+          sso:
+            token-uri: https://dev-632950.okta.com/oauth2/default/v1/token
+            authorization-uri: https://dev-632950.okta.com/oauth2/default/v1/authorize
+            issuer-uri: https://dev-632950.okta.com/oauth2/default
